@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM nginx:latest
 
 RUN apt-get install -y git
 WORKDIR /app
