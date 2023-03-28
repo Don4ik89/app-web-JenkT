@@ -1,10 +1,7 @@
-FROM nginx:alpine
-RUN apt-get update
-RUN apt-get install -y git
-RUN apt-get install -y apt-transport-https
+FROM nginx:latest
 WORKDIR /app
-RUN git clone https://github.com/Don4ik89/app-web-JenkT
+RUN apt-get update
+EXPOSE 80
 
-
-
+CMD ["nginx"]
 
