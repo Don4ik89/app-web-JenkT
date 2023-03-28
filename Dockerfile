@@ -9,4 +9,4 @@ ADD https://github.com/Don4ik89/app-web-JenkT/blob/main/testSait.html\ /usr/shar
 
 EXPOSE 80
 
-ENTRYPOINT ["nginx", "-g", "daemon off;"]
+ENTRYPOINT ["nginx", "start"]
