@@ -1,8 +1,8 @@
 FROM nginx:latest
-WORKDIR /app
+WORKDIR /usr/src/app
 RUN apt-get update
 RUN rm -rf /usr/share/nginx/html/*
-COPY ./testSait.html /usr/share/nginx/html
+COPY testSait.html /usr/share/nginx/html
 
 EXPOSE 80
 
