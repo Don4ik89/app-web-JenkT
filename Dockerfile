@@ -7,4 +7,4 @@ RUN git clone https://github.com/Don4ik89/app-web-JenkT
 
 
 
-ENTRYPOINT ["nginx", "-g", "daemon off;"]
+
