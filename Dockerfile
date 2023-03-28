@@ -6,5 +6,5 @@ COPY ./testSait.html /usr/share/nginx/html
 
 EXPOSE 80
 
-CMD ["nginx"]
+ENTRYPOINT ["nginx", "-g"]
 
