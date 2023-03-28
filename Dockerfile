@@ -1,7 +1,6 @@
-FROM nginx:alpine as builder
+FROM nginx:latest
+WORKDIR /app
+RUN apt-get update
+EXPOSE 80
 
-RUN rm -rf /usr/share/nginx/html/*
-
-COPY https://github.com/Don4ik89/app-web-JenkT/blob/main/testSait.html /usr/share/nginx/html
-
-ENTRYPOINT ["nginx", "-g", "daemon off;"]
+CMD ["nginx"]
